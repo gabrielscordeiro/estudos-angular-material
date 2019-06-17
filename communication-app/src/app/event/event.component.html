@@ -3,7 +3,8 @@
     <section>
       <h3>
         Value {{ value }}
-        <app-child-item>
+        <app-child-item [title]="title" 
+        (inc)="incBy($event)">
           
         </app-child-item>
       </h3>

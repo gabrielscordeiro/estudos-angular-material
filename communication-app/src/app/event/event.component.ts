@@ -7,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EventComponent implements OnInit {
   value: number = 0;
-  
+  title = 'My title';
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  incBy(event) {
+    this.value += event;
   }
 
 }
