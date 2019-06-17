@@ -10,8 +10,13 @@ import { ChildItemComponent } from './event/child-item/child-item.component';
 import {
   MatCardModule,
   MatButtonModule,
-  MatIconModule
+  MatIconModule,
+  MatFormFieldModule,
+  MatInputModule
 } from '@angular/material';
+import { ClientsComponent } from './clients/clients.component';
+import { FormsModule } from '@angular/forms';
+import { ItemClientComponent } from './clients/item-client/item-client.component';
 
 @NgModule({
   declarations: [
@@ -19,14 +24,19 @@ import {
     InputBindingComponent,
     ClientComponent,
     EventComponent,
-    ChildItemComponent    
+    ChildItemComponent,
+    ClientsComponent,
+    ItemClientComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MatCardModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    FormsModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
