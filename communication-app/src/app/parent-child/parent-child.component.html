@@ -1,0 +1,7 @@
+<div>
+  <button mat-button color="primary" (click)="watch.start()">Start</button>
+  <button mat-button color="accent" (click)="watch.stop()">Stop</button>
+  <button mat-button color="warn" (click)="watch.clear()">Clear</button>
+</div>
+
+<app-timer #watch></app-timer>
