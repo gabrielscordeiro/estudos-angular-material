@@ -7,12 +7,18 @@ import { MaterialModule } from './material.module';
 import { FormsModule } from '@angular/forms';
 import { MainLifecycleComponent } from './main-lifecycle/main-lifecycle.component';
 import { LifecycleChildComponent } from './main-lifecycle/lifecycle-child/lifecycle-child.component';
+import { ChildChildComponent } from './main-lifecycle/lifecycle-child/child-child/child-child.component';
+import { CheckComponent } from './check/check.component';
+import { CheckChildComponent } from './check/check-child/check-child.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainLifecycleComponent,
-    LifecycleChildComponent
+    LifecycleChildComponent,
+    ChildChildComponent,
+    CheckComponent,
+    CheckChildComponent
   ],
   imports: [
     BrowserModule,

@@ -32,8 +32,19 @@ export class LifecycleChildComponent implements OnInit, OnChanges, OnDestroy, Af
   }
 
   ngOnChanges(changes: SimpleChanges) {
+    console.log(changes);
     console.log(`${this.name} - ngOnChanges`);
     this.newEvent('ngOnChanges');
+    /*
+    for(let proName in changes){
+      console.log(proName);
+    }
+    */
+    /*
+    if(changes['name']){
+      console.log(`New name:  ${changes.name.currentValue}`)
+    }
+    */
   }
 
   ngAfterContentInit() {
@@ -61,7 +72,7 @@ export class LifecycleChildComponent implements OnInit, OnChanges, OnDestroy, Af
 
     setTimeout(() => {
       let idx = this.events.findIndex((e) => e.id == id);
-      if(idx >= 0){
+      if (idx >= 0) {
         this.events.splice(idx, 1);
       }
     }, 3000 + this.events.length * 2000)
