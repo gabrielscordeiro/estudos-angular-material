@@ -43,10 +43,13 @@ import {
   MatTooltipModule,
   MatTreeModule,
 } from '@angular/material';
+import { BasicCreationComponent } from './basic-creation/basic-creation.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    BasicCreationComponent
   ],
   imports: [
     BrowserModule,
@@ -87,7 +90,8 @@ import {
     MatToolbarModule,
     MatTooltipModule,
     MatTreeModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
