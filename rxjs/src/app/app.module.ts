@@ -45,11 +45,13 @@ import {
 } from '@angular/material';
 import { BasicCreationComponent } from './basic-creation/basic-creation.component';
 import { FormsModule } from '@angular/forms';
+import { OperatorsComponent } from './operators/operators.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BasicCreationComponent
+    BasicCreationComponent,
+    OperatorsComponent
   ],
   imports: [
     BrowserModule,
