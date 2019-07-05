@@ -46,12 +46,15 @@ import {
 import { BasicCreationComponent } from './basic-creation/basic-creation.component';
 import { FormsModule } from '@angular/forms';
 import { OperatorsComponent } from './operators/operators.component';
+import { SwitchMergeComponent } from './switch-merge/switch-merge.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     BasicCreationComponent,
-    OperatorsComponent
+    OperatorsComponent,
+    SwitchMergeComponent
   ],
   imports: [
     BrowserModule,
@@ -93,7 +96,8 @@ import { OperatorsComponent } from './operators/operators.component';
     MatTooltipModule,
     MatTreeModule,
     FlexLayoutModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
